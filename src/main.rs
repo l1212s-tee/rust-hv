@@ -17,6 +17,6 @@ fn panic(_info: &PanicInfo) -> ! {
 }
 
 #[no_mangle]
-pub extern "C" fn entry() -> ! {
-    loop { }
+pub extern "C" fn entry() -> i32 {
+    0
 }

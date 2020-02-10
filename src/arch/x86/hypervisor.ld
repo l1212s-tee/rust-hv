@@ -26,6 +26,12 @@ SECTIONS
  . = ALIGN((1 << 12));
  .console : { *(.console) }
  . = ALIGN((1 << 12));
+ 
+ . = ALIGN(1 << 12);
+ .data.rel.ro    : { *(.data.rel.ro) }
+ . = ALIGN(1 << 12);
+ .got        : { *(.got) }
+ 
  .bss : { *(.bss) }
  . = ALIGN((1 << 12));
  __page_pool = .;

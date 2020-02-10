@@ -14,8 +14,7 @@
   "features": "-mmx,-sse,+soft-float",
   "pre-link-args": {
     "ld.lld": [
-      "-Tsrc/arch/x86/hypervisor.ld",
-      "-export-dynamic"
+      "-Tsrc/arch/x86/hypervisor.ld"
     ]
   }
 }
