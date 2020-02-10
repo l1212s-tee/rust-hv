@@ -1,0 +1,9 @@
+[package]
+name = "rust-hv"
+version = "0.1.0"
+authors = ["Hoblovski <daizy19@mails.tsinghua.edu.cn>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
