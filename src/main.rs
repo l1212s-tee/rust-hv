@@ -6,7 +6,7 @@
 
 use core::panic::PanicInfo;
 
-global_asm!(include_str!("entry.S"));
+global_asm!(include_str!("arch/x86/entry.S"));
 
 #[lang = "eh_personality"]
 extern "C" fn eh_personality() {}
@@ -16,11 +16,7 @@ fn panic(_info: &PanicInfo) -> ! {
     loop { }
 }
 
-//#[start]
-//fn main(_argc: isize, _: argv *const *const u8) {
-
-#[no_mangle] // don't mangle the name of this function
+#[no_mangle]
 pub extern "C" fn entry() -> ! {
     loop { }
-//    println!("Hello, world!");
 }
